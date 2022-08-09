@@ -4,9 +4,9 @@
     require_once('./inc/includes.php');
 
     if (isset($_GET['map']))
-        $mapname = $_GET['map'];
+        $mapname = urlencode($_GET['map']);
     else
-        $mapname = '';
+        $mapname = urlencode('');
 
     //require_once('./inc/pages/dashboard_maps.php');
     require_once('header.php');
@@ -26,7 +26,7 @@
                             <div class="spinner-grow text-dark my-2" role="status">
                                 <span class="sr-only">Loading...</span>
                             </div>
-                            <h5>Loading Map: <b><?php echo $mapname; ?></b> Details...<br><small>Please Wait...</small></h5>
+                            <h5>Loading Map: <b><?php echo htmlentities($mapname); ?></b> Details...<br><small>Please Wait...</small></h5>
                         </div>
                     <?php else: ?>
                         <h5>Surf Stat's Map Collection</h5>
