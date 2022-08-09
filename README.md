@@ -1,6 +1,8 @@
 
 # Surftimer-Web-Stats v2
 
+(sanitized parameters to prevent XSS) 
+
  ![GitHub Repo stars](https://img.shields.io/github/stars/kristianp26/surftimer-web-stats?color=ew&style=flat-square)
  ![GitHub forks](https://img.shields.io/github/forks/kristianp26/surftimer-web-stats?style=flat-square)
  ![GitHub contributors](https://img.shields.io/github/contributors/kristianp26/surftimer-web-stats?style=flat-square)
