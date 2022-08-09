@@ -137,12 +137,12 @@
                                                 <?php
                                                 ?>
                                                 <tr>
-                                                    <td class="text-center"><?php echo ++$t10p_row_number; ?>.</td>
+                                                    <td class="text-center"><?php echo htmlentities(++$t10p_row_number); ?>.</td>
                                                     <td class="text-left"><?php if($config_player_flags) echo CountryFlag($t10p['country'], $t10p['countryCode'], $t10p['continentCode']); ?> <?php echo $t10p['name']; ?>  <a href="dashboard-player.php?id=<?php echo $t10p['steamid64']; ?>" target="" title="<?php echo $t10p['name']; ?> - Surf Profile" class="text-muted"><i class="fas fa-user-circle"></i></a> <a href="https://steamcommunity.com/profiles/<?php echo $t10p['steamid64']; ?>" target="_blank" title="<?php echo $t10p['name']; ?> - Steam Profile" class="text-muted"><i class="fab fa-steam"></i></a></td>
-                                                    <td class="text-center"><?php echo number_format($t10p['points']); ?></td>
-                                                    <td class="text-center"><?php echo number_format($t10p['finishedmapspro']); ?></td>
-                                                    <td class="text-center"><?php echo number_format($t10p['finishedbonuses']); ?></td>
-                                                    <td class="text-center"><?php echo number_format($t10p['finishedstages']); ?></td>
+                                                    <td class="text-center"><?php echo htmlentities(number_format($t10p['points'])); ?></td>
+                                                    <td class="text-center"><?php echo htmlentities(number_format($t10p['finishedmapspro'])); ?></td>
+                                                    <td class="text-center"><?php echo htmlentities(number_format($t10p['finishedbonuses'])); ?></td>
+                                                    <td class="text-center"><?php echo htmlentities(number_format($t10p['finishedstages'])); ?></td>
                                                 </tr>
                                             <?php endforeach; ?>
                                         </tbody>
