@@ -4,7 +4,7 @@
     require_once('./inc/includes.php');
 
     if (isset($_GET['map']))
-        $mapname = urlencode($_GET['map']);
+        $mapname = htmlspecialchars(urlencode($_GET['map']));
     else
         $mapname = urlencode('');
 
